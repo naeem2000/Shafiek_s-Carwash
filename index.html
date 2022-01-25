@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shafiek's Car Wash</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="ico" href="icon.ico"/>
+</head>
+<header>
+        <svg width="100%" height="70%">
+            <text x="50%" y="55%"  text-anchor="middle"  >
+                Shafiek's Car Wash
+            </text>
+       </svg>
+       <nav>
+            <a class="active" href="index.html">Home</a>
+            <a href="gallery/gallery.html">Photo-gallery</a>
+            <a href="contact/contact.html">Contact</a>
+        </nav>
+</header>
+<body>
+    <div class="intro">
+        <div class="intro-slideshow">
+          <img src="images/IMG-20210815-WA0025.jpg">
+          <img src="images/IMG_20210731_160744.jpg">
+          <img src="images/InkedIMG_20210806_120440_LI.jpg">
+          <img src="images/WhatsApp Image 2021-10-26 at 07.37.37 (1).jpeg">
+          <img src="images/WhatsApp Image 2021-10-26 at 07.37.37.jpeg">
+          <img src="images/WhatsApp Image 2021-10-26 at 07.37.38.jpeg">
+          </div>
+    </div>
+    <div class="area">
+            <div class="center">
+              <h1>Prices</h1>
+              <br>
+              <h2>Wash</h2> - Includes Hand dry, Vacuum, Tyre Shine & Dash Shine + Free Sanitizing
+                <br>
+                <strong>R70</strong>
+                <br>
+                <br>
+              <h2>Polish</h2> - Includes Wash, Hand Dry, Vacuum, Tyre Shine, Dash Shine, Hand Polish + Free Sanitizing
+                <br>
+                <strong>R150</strong>
+                <br>
+                <br>
+              <h2>Engine Wash</h2> - Customers must provide their own Engine Cleaner
+                <br>
+                <strong>R30</strong>
+                <br>
+                <br>
+              </p>
+              <h2>Buffing</h2> - Pricing depends on vehicle size</p>
+            </div> 
+    </div>
+    <script>
+const slideshowImages = document.querySelectorAll(".intro-slideshow img");
+
+const nextImageDelay = 3000;
+let currentImageCounter = 0; // setting a variable to keep track of the current image (slide)
+
+  // slideshowImages[currentImageCounter].style.display = "block";
+  slideshowImages[currentImageCounter].style.opacity = 1;
+
+  setInterval(nextImage, nextImageDelay);
+
+function nextImage() {
+  // slideshowImages[currentImageCounter].style.display = "none";
+  slideshowImages[currentImageCounter].style.opacity = 0;
+
+  currentImageCounter = (currentImageCounter+1) % slideshowImages.length;
+
+  // slideshowImages[currentImageCounter].style.display = "block";
+  slideshowImages[currentImageCounter].style.opacity = 1;
+  }
+    </script>
+</body>
+<footer>
+    ©2021 by Mogamat Naeem Carr
+</footer>
+</html>
