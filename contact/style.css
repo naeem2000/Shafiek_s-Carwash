@@ -114,6 +114,13 @@ body {
   font-family: sans-serif;
 }
 
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 i {
     text-decoration: none;
     color: white;
